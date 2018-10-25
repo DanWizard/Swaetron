@@ -5,8 +5,7 @@ import tweepy
 from tweepy import OAuthHandler 
 from datetime import datetime
 
-consumer_key = 'sRgDsLD2ooisushlfKkHZSDAx'
-consumer_secret = 'NEj3dIxggttoGsLA3qoPX6rw02wMt0z0aGfjjAQ5I2E99aYBke'
+
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
