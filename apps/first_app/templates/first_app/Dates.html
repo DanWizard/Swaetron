@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sweater On Polo</title>
+		{% load static %}
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA4wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAOkAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAA/wAAAAAAAAD/AAAA/wAAAP8AAADpAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAAAAAAA/wAAAP8AAAAAAAAA/wAAAP8AAAD/AAAA6QAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAAAAAAAP8AAAD/AAAAAAAAAP8AAAD/AAAA/wAAAOMAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAAAAAAD/AAAA/wAAAAAAAAD/AAAA/wAAAP8AAABZAAAAAAAAAAAAAAAAAAAAAAAAAHsAAAD/AAAA/wAAAP8AAAAAAAAA/wAAAP8AAAAAAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMfjAADDwwAAw8MAAEPCAABDwgAAQ8IAAEfiAABv/gAAP/wAAL/9AACf+QAAz/MAAOfnAADwDwAA//8AAA==" rel="icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{% static 'first_app/css/dates.css' %}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<img id='smallsmallHeader' src="{% static "first_app/css/smallsmallDates.jpg" %}" alt="My image">
+		<img id='smallHeader' src="{% static "first_app/css/smallDates.jpg" %}" alt="My image">
+		<img id='header' src="{% static "first_app/css/DatesHeader.jpg" %}" alt="My image">
+		
+		<div id="navigation">
+			<a href="/shop">
+				<p class="shake">Shop</p>
+			</a>
+			<a href="/music">
+				<p class="shake">Music</p>
+			</a>
+		</div>
+		<a id='homebutton' href="/">
+			<img src="{% static "first_app/css/smallerHomeButton.jpg" %}" alt="My image"">
+		</a>
+		<div id="social_media">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/sweater_on_polo/" class="fa fa-instagram"></a>
+			<a href="https://soundcloud.com/sweateronpolo" class="fa fa-soundcloud"></a>
+			<a href="https://sweateronpolo.bandcamp.com/" class="fa fa-bandcamp"></a>
+		</div>
+		<div class="twitter_api">
+			{% for i in data %}
+				<img class="imported_pic" src="{{i.Photo}}">
+				{% if i.Location%}
+				<div class="button_wrapper">
+					<a  class="location_button" href="{{i.Location}}"><img id='location' src="{% static "first_app/css/download.png" %}" alt="My image""></a>
+				</div>
+				{% endif %}
+				
+			{% endfor %}
+		</div>
+		<div id="social_media_phone">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/sweater_on_polo/" class="fa fa-instagram"></a>
+			<a href="https://soundcloud.com/sweateronpolo" class="fa fa-soundcloud"></a>
+			<a href="https://sweateronpolo.bandcamp.com/" class="fa fa-bandcamp"></a>
+		</div>
+	</body>
+</html>

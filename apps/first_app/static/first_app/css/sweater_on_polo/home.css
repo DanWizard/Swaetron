@@ -1,0 +1,105 @@
+#header_background img{
+	width: 100%;
+	height: 650px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#social_media{
+	display: inline-block;
+	margin-left: 85%;
+}
+
+#social_media a{
+	display: inline-block;
+}
+
+.fa{
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#navigation{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+#navigation a p{
+	font-family: monospace;
+	font-size: 65px;
+	color: black;
+	text-shadow: 
+}
+
+#navigation a{
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 18%;
+	
+}
+
+.fa-facebook{
+	background: black;
+	color: #ffffff;
+}
+
+.fa-twitter{
+	background: black;
+	color: #ffffff;
+}
+
+.fa-youtube{
+	background: black;
+	color: #ffffff;
+}
+
+.fa-instagram{
+	background: black; 
+	color: #ffffff;
+}
+
+.fa-soundcloud{
+	background: black;
+	color: #ffffff;
+
+}
+
+.fa-bandcamp{
+	background: black;
+	color: #ffffff;
+}
+
+#subscribe_title p{
+	font-family: monospace;
+	font-size: 40px;
+	margin-bottom: 0px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#text{
+	border-style: solid;
+	border-color: black;
+	margin-top: 0px;
+	text-align: center;
+	margin-left: 820px;
+}
+
+#subscribe_title {
+	display: block;
+	margin;
+}
+
+#subscribe_entry{
+
+}
+
+#submit{
+	background: white;
+	border-style: solid;
+	border-color: black;
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<title>Sweater On Polo</title>
+		{% load static %}
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA4wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAOkAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAA/wAAAAAAAAD/AAAA/wAAAP8AAADpAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAAAAAAA/wAAAP8AAAAAAAAA/wAAAP8AAAD/AAAA6QAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAAAAAAAP8AAAD/AAAAAAAAAP8AAAD/AAAA/wAAAOMAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAAAAAAD/AAAA/wAAAAAAAAD/AAAA/wAAAP8AAABZAAAAAAAAAAAAAAAAAAAAAAAAAHsAAAD/AAAA/wAAAP8AAAAAAAAA/wAAAP8AAAAAAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMfjAADDwwAAw8MAAEPCAABDwgAAQ8IAAEfiAABv/gAAP/wAAL/9AACf+QAAz/MAAOfnAADwDwAA//8AAA==" rel="icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{% static 'first_app/css/home.css' %}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function(){
+					$('#text').click(function(){
+						$('#text').val('');
+					});
+				});
+				
+		</script>
+	</head>
+	<body>
+		<div id="swipeUpcontainer">
+			<img id="swipeUp" src="{% static "first_app/css/SwipeUp.png" %}" alt="img">
+		</div>
+		<img id="smallsmallHeader" src="{% static "first_app/css/smallsmallHomeHeader.jpg" %}" alt="My image">
+		<img id="smallHeader" src="{% static "first_app/css/smallHomeHeader.jpg" %}" alt="My image">
+		<img id="header" src="{% static "first_app/css/newHomeHeader.jpg" %}" alt="My image">
+		<div id="social_media">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/sweater_on_polo/" class="fa fa-instagram"></a>
+			<a href="https://soundcloud.com/sweateronpolo" class="fa fa-soundcloud"></a>
+			<a href="https://sweateronpolo.bandcamp.com/" class="fa fa-bandcamp"></a>
+		</div>
+		<div id="navwrapper">
+			<div>
+				<a href="/dates"> 
+					<p>Dates</p>
+				</a>
+				<a href="/shop" class="children">
+					<p>Shop</p>
+				</a>
+				<a href="/music" class="children">
+					<p>Music</p>
+				</a>
+			</div>
+		</div>
+		<div id="subscribe_title">
+			<p>Sign Up For Updates</p>
+		</div>
+		<form action="/processEmail" method="post">
+				{% csrf_token %}
+		<div id="subscribe_entry">
+			
+			<div>
+				{% if messages %}
+					{% for message in messages %}
+						{% if message %}
+							<p>{{message}}</p>
+						{% endif %}
+					{% endfor %}
+				{% endif %}
+				<input id="text" type="text" name="email" value="Enter Email Address" align="middle">
+				<input id="submit" type="submit" name="sub" value="subscribe">
+			</div>
+		</div>
+		</form>
+	</body>
+</html>

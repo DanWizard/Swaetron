@@ -1,0 +1,566 @@
+@media only screen and (max-width: 699px){
+	#smallsmallHeader{
+		display: block;
+		width: 100%;
+		height: 265px; 
+	}
+	#header{
+		display: none;
+	}
+	#smallHeader{
+		display: none;
+	}
+	#homebutton{
+		display: inline-block;
+		height: 50px;
+		margin-top: 25px;
+		margin-right: 5%;
+		float: right;
+	}
+	#navigation{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		position: absolute;
+		top: 275px;
+		width: 100px;
+	}
+	#navigation a p{
+		font-family: monospace;
+		font-size: 20px;
+		color: black; 
+		display: inline-block;
+		margin-left: 25px;
+	}
+	#subscribe_title {
+		display: block;
+		height: 100px;
+		vertical-align: bottom;
+	}
+	#content{
+		text-align: center;
+		font-family: monospace;
+		font-size: 35px;
+		margin-bottom: 150px;
+		margin-top: 200px;
+	}
+	#subWrapper{
+		margin-top: 125px;
+		height: 400px;
+	}
+	#subscribe_entry{
+		width: 100%;
+		height: 20px;
+	}
+
+	#subscribe_entry div{
+		width: 280px;
+		margin: 0 auto;
+	}
+	.fa{
+		margin-top: 20px;
+		padding: 10px;
+		text-decoration: none;
+		border-radius: 20px;
+	}
+
+	.fa-facebook{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-twitter{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-youtube{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-instagram{
+		background: black; 
+		color: #ffffff;
+	}
+
+	.fa-soundcloud{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-bandcamp{
+		background: black;
+		color: #ffffff;
+	}
+	#social_media{
+		display: none;
+	}
+	#social_media_phone{
+		display: block;
+		vertical-align: bottom;
+		margin-right: 12.5%;
+		width: 230px;
+		margin: 0 auto;
+		margin-top: 75px;
+	}
+
+	#social_media a{
+		display: inline-block;
+	}
+
+	#navigation a{
+		text-decoration: none;
+		margin-left: 5%;	
+	}
+
+	a:hover {
+	    animation: shake 0.5s; 
+	    animation-iteration-count: infinite; 
+	}
+	.shake:hover{
+		animation: shake 0.5s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes shake {
+	    0% { transform: translate(1px, 1px) rotate(0deg); }
+	    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	    20% { transform: translate(-3px, 0px) rotate(1deg); }
+	    30% { transform: translate(3px, 2px) rotate(0deg); }
+	    40% { transform: translate(1px, -1px) rotate(1deg); }
+	    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	    60% { transform: translate(-3px, 1px) rotate(0deg); }
+	    70% { transform: translate(3px, 1px) rotate(-1deg); }
+	    80% { transform: translate(-1px, -1px) rotate(1deg); }
+	    90% { transform: translate(1px, 2px) rotate(0deg); }
+	    100% { transform: translate(1px, -2px) rotate(-1deg); }
+	}
+
+	#subscribe_title p{
+		font-family: monospace;
+		font-size: 35px;
+		margin-bottom: 0px;
+		text-align: center;
+		margin-top: 150px;
+	}
+
+	#text{
+		font-family: monospace
+		border-style: solid;
+		border-color: black;
+		margin-top: 0px;
+		text-align: center;
+		width: 175px;
+		height: 33px;
+		margin: 0 auto;
+		
+	}
+
+	#subscribe_title {
+		display: block;
+		height: 100px;
+		vertical-align: bottom;
+		}
+
+
+
+	#submit{
+		background: white;
+		border-style: solid;
+		border-color: black;
+		width: 95px;
+		height: 33px;
+		font-size: 15px;
+		font-family: monospace
+
+	}
+
+
+	#submit:hover{
+		background: black;
+		color: white
+	}
+
+	input[type='text']
+	{
+		font-size: 15px;
+		font-family: monospace;
+	}	
+}
+@media only screen and (min-width: 700px){
+	#header{
+		display: none;
+	}
+	#smallHeader{
+		display: block;
+		width: 100%;
+		height: 265px;
+	}
+	#smallsmallHeader{
+		display: none;
+	}
+	#homebutton{
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	top: 300px;
+	left: 45%;
+	}
+	#navigation{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	position: absolute;
+	top: 250px;
+	width: 200px;
+	}
+	#navigation a p{
+	font-family: monospace;
+	font-size: 30px;
+	color: black; 
+	display: inline-block;
+	margin-left: 25px;
+	}
+	#subscribe_title {
+	display: block;
+	height: 100px;
+	vertical-align: bottom;
+	}
+	#content{
+	text-align: center;
+	font-family: monospace;
+	font-size: 60px;
+	margin-bottom: 150px;
+	}
+	#subWrapper{
+	margin-top: 300px;
+	height: 500px;
+	}
+	.fa{
+	margin-top: 20px;
+	padding: 17px;
+	text-decoration: none;
+	border-radius: 20px;
+	}
+
+	.fa-facebook{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-twitter{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-youtube{
+		background: black;
+		color: #ffffff;
+	}
+
+	.fa-instagram{
+		background: black; 
+		color: #ffffff;
+	}
+
+	.fa-soundcloud{
+		background: black;
+		color: #ffffff;
+
+	}
+
+	.fa-bandcamp{
+		background: black;
+		color: #ffffff;
+	}
+
+	#social_media{
+		display: inline-block;
+		float: right;
+		width: 175px;
+	}
+
+	#social_media a{
+		display: inline-block;
+	}
+	#social_media_phone{
+		display: none;
+	}
+	#navigation a{
+		text-decoration: none;
+		margin-left: 5%;
+
+		
+	}
+
+	a:hover {
+	    animation: shake 0.5s; 
+	    animation-iteration-count: infinite; 
+	}
+	.shake:hover{
+		animation: shake 0.5s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes shake {
+	    0% { transform: translate(1px, 1px) rotate(0deg); }
+	    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	    20% { transform: translate(-3px, 0px) rotate(1deg); }
+	    30% { transform: translate(3px, 2px) rotate(0deg); }
+	    40% { transform: translate(1px, -1px) rotate(1deg); }
+	    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	    60% { transform: translate(-3px, 1px) rotate(0deg); }
+	    70% { transform: translate(3px, 1px) rotate(-1deg); }
+	    80% { transform: translate(-1px, -1px) rotate(1deg); }
+	    90% { transform: translate(1px, 2px) rotate(0deg); }
+	    100% { transform: translate(1px, -2px) rotate(-1deg); }
+	}
+
+	#subscribe_title p{
+		font-family: monospace;
+		font-size: 50px;
+		margin-bottom: 0px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	#text{
+		font-family: monospace
+		border-style: solid;
+		border-color: black;
+		margin-top: 0px;
+		text-align: center;
+		width: 200px;
+		height: 33px;
+		margin: 0 auto;
+		}
+
+
+
+
+
+	#submit{
+		background: white;
+		border-style: solid;
+		border-color: black;
+		width: 110px;
+		height: 33px;
+		font-size: 18px;
+		font-family: monospace
+
+	}
+
+	#subscribe_entry{
+		width: 100%;
+		height: 20px;
+
+		
+	}
+
+	#subscribe_entry div{
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	#submit:hover{
+		background: black;
+		color: white
+	}
+
+	input[type='text']
+	{
+		font-size: 18px;
+		font-family: monospace;
+	}
+}
+
+
+@media only screen and (min-width: 1224px){
+	#header{
+		display: block;
+		width: 100%;
+		height: 265px;
+
+	}
+	#smallHeader{
+		display: none;
+	}
+
+	#smallsmallHeader{
+		display: none;
+	}
+
+	#homebutton{
+		display: inline-block;
+		position: absolute;
+		height: 50px;
+		top: 275px;
+		left: 47%;
+	}
+	#navigation{
+		margin-top: 5px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		position: absolute;
+		top: 250px;
+		width: 400px;
+	}
+
+
+	#navigation a p{
+		font-family: monospace;
+		font-size: 40px;
+		color: black; 
+		display: inline-block;
+		margin-left: 25px;
+	}
+
+	#navigation a{
+		text-decoration: none;
+		margin-left: 5%;
+	}
+
+	#content{
+		text-align: center;
+		font-family: monospace;
+		font-size: 80px;
+		margin-bottom: 300px;
+	}
+
+	.fa{
+		margin-top: 20px;
+		padding: 17px;
+		text-decoration: none;
+		border-radius: 20px;
+	}
+
+	.fa-facebook{
+	background: black;
+	color: #ffffff;
+	}
+
+	.fa-twitter{
+	background: black;
+	color: #ffffff;
+	}
+
+	.fa-youtube{
+	background: black;
+	color: #ffffff;
+	}
+
+	.fa-instagram{
+	background: black; 
+	color: #ffffff;
+	}
+
+	.fa-soundcloud{
+	background: black;
+	color: #ffffff;
+	}
+
+	.fa-bandcamp{
+	background: black;
+	color: #ffffff;
+	}
+
+	#social_media{
+	display: inline-block;
+	float: right;
+	width: 325px;
+	}
+
+	#social_media a{
+	display: inline-block;
+	}
+
+	#social_media_phone{
+		display: none;
+	}
+
+	a:hover {
+	    animation: shake 0.5s; 
+	    animation-iteration-count: infinite; 
+	}
+	.shake:hover{
+		animation: shake 0.5s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes shake {
+	    0% { transform: translate(1px, 1px) rotate(0deg); }
+	    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	    20% { transform: translate(-3px, 0px) rotate(1deg); }
+	    30% { transform: translate(3px, 2px) rotate(0deg); }
+	    40% { transform: translate(1px, -1px) rotate(1deg); }
+	    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	    60% { transform: translate(-3px, 1px) rotate(0deg); }
+	    70% { transform: translate(3px, 1px) rotate(-1deg); }
+	    80% { transform: translate(-1px, -1px) rotate(1deg); }
+	    90% { transform: translate(1px, 2px) rotate(0deg); }
+	    100% { transform: translate(1px, -2px) rotate(-1deg); }
+	}
+
+	#subscribe_title p{
+		font-family: monospace;
+		font-size: 50px;
+		margin-bottom: 0px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	#text{
+		font-family: monospace
+		border-style: solid;
+		border-color: black;
+		margin-top: 0px;
+		text-align: center;
+		width: 200px;
+		height: 33px;
+		margin: 0 auto;
+		}
+
+	#subscribe_title {
+		display: block;
+		height: 100px;
+		vertical-align: bottom;
+		}
+	#submit{
+		background: white;
+		border-style: solid;
+		border-color: black;
+		width: 110px;
+		height: 33px;
+		font-size: 18px;
+		font-family: monospace
+
+	}
+
+	#subscribe_entry{
+		width: 100%;
+		height: 20px;
+
+		
+	}
+
+	#subscribe_entry div{
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	#subWrapper{
+		margin-top: 250px;
+		height: 600px;
+	}
+	#submit:hover{
+		background: black;
+		color: white
+	}
+
+	input[type='text']
+	{
+		font-size: 18px;
+		font-family: monospace;
+	}
+}

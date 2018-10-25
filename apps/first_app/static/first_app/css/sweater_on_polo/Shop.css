@@ -1,0 +1,74 @@
+img{
+	width: 100%;
+}
+
+.fa{
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+.fa-facebook{
+	background: black;
+	color: #ffffff;
+}
+
+.fa-twitter{
+	background: black;
+	color: #ffffff;
+}
+
+.fa-youtube{
+	background: black;
+	color: #ffffff;
+}
+
+.fa-instagram{
+	background: black; 
+	color: #ffffff;
+}
+
+.fa-soundcloud{
+	background: black;
+	color: #ffffff;
+
+}
+
+.fa-bandcamp{
+	background: black;
+	color: #ffffff;
+}
+
+#social_media{
+	display: inline-block;
+	margin-left: 85%;
+	position: relative;
+}
+
+#social_media a{
+	display: inline-block;
+}
+
+#navigation{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	position: absolute;
+	top: 200px;
+}
+
+
+#navigation a p{
+	font-family: monospace;
+	font-size: 25px;
+	color: black; 
+	display: inline-block;
+	margin-left: 25px;
+}
+
+#navigation a{
+	text-decoration: none;
+	margin-left: 5%;
+
+	
+}
