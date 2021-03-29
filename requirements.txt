@@ -32,7 +32,7 @@ pickleshare==0.7.4
 plotly==3.3.0
 prompt-toolkit==1.0.15
 pycparser==2.18
-Pygments==2.2.0
+Pygments==2.7.4
 
 PySocks==1.6.8
 pytz==2018.5
