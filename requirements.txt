@@ -12,7 +12,7 @@ dash-core-components==0.30.2
 dash-html-components==0.13.2
 dash-renderer==0.14.1
 decorator==4.3.0
-Django==1.10
+Django==2.2.24
 Flask==1.0.2
 Flask-Bcrypt==0.7.1
 Flask-Compress==1.4.0
